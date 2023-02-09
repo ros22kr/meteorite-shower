@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .meteor-shower {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        position: relative;
+        background-color: #f9f9f9;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .meteor-shower h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      
+      .meteor-shower table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      
+      .meteor-shower th,
+      .meteor-shower td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      
+      .meteor-shower th {
+        background-color: #333;
+        color: #fff;
+        font-weight: bold;
+      }
+      
+      .meteor-shower td {
+        background-color: #f3f3f3;
+      }
+      
+      .meteor {
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: meteor 5s linear infinite;
+      }
+      
+       @keyframes meteor {
+        0% {
+          top: -100px;
+        }
+        100% {
+          top: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="meteor-shower">
+      <h1>Meteor Showers</h1>
+      <div class="meteor">
+        <img src="meteor.png" alt="Meteor">
+      </div>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Max</th>
+        </tr>
+        <tr>
+          <td>Quadrantids</td>
+          <td>January 1 - January 5</td>
+          <td>40-60</td>
+        </tr>
+        <tr>
+          <td>Lyrids</td>
+          <td>April 16 - April 26</td>
+          <td>10-20</td>
+        </tr>
+        <tr>
+          <td>Perseids</td>
+          <td>July 17 - August 24</td>
+          <td>50-80</td>
+        </tr>
+        <tr>
+          <td>Geminids</td>
+          <td>December 4 - December 17</td>
+          <td>120-160</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
